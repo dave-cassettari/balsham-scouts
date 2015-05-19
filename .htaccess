@@ -1,0 +1,14 @@
+<IfModule mod_headers.c>
+	BrowserMatch MSIE ie
+
+	Header set X-UA-Compatible "IE=Edge,chrome=1" env=ie
+</IfModule>
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	
+	RewriteRule ^(.*) index.php?page=$1 [NC,QSA]
+</IfModule>
