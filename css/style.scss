@@ -6,6 +6,34 @@ body
 	line-height: 1.5;
 }
 
+h2,
+h3
+{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 22px;
+
+	i,
+	.fa
+	{
+		margin: 0 10px 0 0;
+		border-radius: 50px;
+		color: #4D2D78;
+		font-size: 22px !important;
+		text-align: center;
+	}
+}
+
+p
+{
+	margin-bottom: 15px;
+}
+
+i
+{
+	margin: 0 10px 0 0;
+}
+
 .navbar-default
 {
 	background-color: #fff;
@@ -138,6 +166,40 @@ body
 	}
 }
 
+.prices
+{
+	.price
+	{
+		width: 175px;
+		margin: 20px 0 0;
+		padding: 20px 25px 20px 15px;
+		background: url("../images/ticket.jpg") center center no-repeat;
+		background-size: 100% 100%;
+		text-align: center;
+		display: inline-block;
+
+		&.is-large
+		{
+			width: 500px;
+			padding: 40px 60px 50px 30px;
+		}
+	}
+
+	.price-title
+	{
+		font-size: 125%;
+		font-weight: bold;
+		display: block;
+	}
+
+	.price-value
+	{
+		font-size: 150%;
+		font-weight: bold;
+		display: block;
+	}
+}
+
 .highlight
 {
 	padding: 15px 50px;
@@ -152,27 +214,22 @@ body
 	font-size: 13px;
 }
 
-h2,
-h3
+.masthead
 {
-	margin-top: 30px;
-	margin-bottom: 20px;
-	font-size: 22px;
+	padding: 20px 0 0;
+	background: #000;
+	color:#fff;
 
-	i,
-	.fa
+	h1
 	{
-		margin: 0 10px 0 0;
-		border-radius: 50px;
-		color: #4D2D78;
-		font-size: 22px !important;
-		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 20px;
 	}
-}
 
-p
-{
-	margin-bottom: 15px;
+	.btn
+	{
+		margin-top: 10px;
+	}
 }
 
 .row
